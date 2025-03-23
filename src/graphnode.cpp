@@ -11,7 +11,7 @@ GraphNode::~GraphNode()
     //// STUDENT CODE
     ////########################################done
 
-    //delete _chatBot; 
+    // delete _chatBot;
 
     ////########################################done
     //// EOF STUDENT CODE

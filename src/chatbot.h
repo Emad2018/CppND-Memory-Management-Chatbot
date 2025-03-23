@@ -1,5 +1,5 @@
-#ifndef CHATBOT_H_
-#define CHATBOT_H_
+#ifndef CHATBOT_H
+#define CHATBOT_H
 
 #include <wx/bitmap.h>
 #include <string>
@@ -26,12 +26,13 @@ public:
     ChatBot();                     // constructor WITHOUT memory allocation
     ChatBot(std::string filename); // constructor WITH memory allocation
     ~ChatBot();
-    
+
     //// STUDENT CODE
     ////########################################done
     ChatBot(const ChatBot &source);
     ChatBot &operator=(const ChatBot &source);
     ChatBot(ChatBot &&source);
+    ChatBot &operator=(ChatBot &&source);
     ////########################################done
     //// EOF STUDENT CODE
 
@@ -45,4 +46,4 @@ public:
     void ReceiveMessageFromUser(std::string message);
 };
 
-#endif /* CHATBOT_H_ */
+#endif /* CHATBOT_H */
